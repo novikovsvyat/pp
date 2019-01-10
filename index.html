@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Posuda Planet</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="preload" href="fonts/montserratregular.woff2" as="font">
+		<link rel="preload" href="fonts/montserratmedium.woff2" as="font">
+	</head>
+	<body>
+		<header class="page-header">
+			<nav class="main-menu">
+				<div class="container main-menu__container">
+					<a class="logo-link main-menu__logo-link" href="#">
+						<img class="logo-image main-menu__logo-image" src="img/logo.svg" alt="Posuda Planet" width="224" height="48">
+					</a>
+					<ul class="main-menu__list">
+						<li class="main-menu__item">
+							<a href="">Акции</a>
+						</li>
+						<li class="main-menu__item">
+							<a href="">О нас</a>
+						</li>
+						<li class="main-menu__item">
+							<a href="">Бренды</a>
+						</li>
+						<li class="main-menu__item">
+							<a href="">Блог</a>
+						</li>
+						<li class="main-menu__item">
+							<a href="">Доставка</a>
+						</li>
+						<li class="main-menu__item">
+							<a href="">Оплата</a>
+						</li>
+						<li class="main-menu__item">
+							<a href="">Контакты</a>
+						</li>
+					</ul>
+					<ul class="user-menu__list">
+						<li class="user-menu__item">
+							<a href="">Вход</a>
+						</li>
+						<li class="user-menu__item">
+							<a href="">Регистрация</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<div class="container add-menu">
+				<div class="add-menu__wrapper">
+					<form class="search" action="" method="get">
+						<label class="visually-hidden" for="main-search">Быстрый поиск товаров:</label>
+						<input class="search__input" type="text" name="main-search" id="main-search" value="" placeholder="Например: ножи керамические">
+						<button class="visually-hidden" type="submit">Поиск</button>
+					</form>
+					<a class="button button--white button--fat" href="#">Заказать звонок</a>
+					<p class="contacts">
+						<b class="contacts__phone">8 (495) 532-45-24</b>
+						<b class="contacts__phone">8 (495) 532-45-24</b>
+						<small class="contacts__time">Ежедневно 8:00 &mdash; 22:00</small>
+					</p>
+				</div>
+					<div class="cart-menu">
+						<span class="cart-menu__title">В корзине</span>
+						<ul class="cart-menu__list">
+							<li class="cart-menu__item">
+								<span class="cart-menu__term">Кол-во товаров</span>
+								<b class="cart-menu__data">1</b>
+							</li>
+							<li class="cart-menu__item">
+								<span class="cart-menu__term">На сумму</span>
+								<b class="cart-menu__data">9650 Р</b>
+							</li>
+						</ul>
+						<a class="button button--green button--t-up cart-menu__link" href="">Корзина</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page-main">
+			<h1 class="visually-hidden">Магазин посуды Posuda Planet</h1>
+			<section class="fast-links container">
+				<h2 class="visually-hidden">Быстрые ссылки</h2>
+				<ul class="fast-links__list">
+					<li class="fast-links__item"><a href="">Бренды</a></li>
+					<li class="fast-links__item"><a href="">Бар и стекло</a></li>
+					<li class="fast-links__item"><a href="">Все для выпечки</a></li>
+					<li class="fast-links__item"><a href="">Все для чая и кофе</a></li>
+					<li class="fast-links__item"><a href="">Кухонные пренадлежности</a></li>
+					<li class="fast-links__item"><a href="">Новинки</a></li>
+					<li class="fast-links__item"><a href="">Ножи</a></li>
+				</ul>
+				<ul class="fast-links__list">
+					<li class="fast-links__item"><a href="">Посуда</a></li>
+					<li class="fast-links__item"><a href="">Распродажа</a></li>
+					<li class="fast-links__item"><a href="">Сервировка</a></li>
+					<li class="fast-links__item"><a href="">Текстиль для дома</a></li>
+					<li class="fast-links__item"><a href="">Товары для дома</a></li>
+					<li class="fast-links__item"><a href="">Товары для отдыха</a></li>
+					<li class="fast-links__item"><a href="">Хозтовары</a></li>
+				</ul>
+			</section>
+			<section class="promo container">
+				<h2 class="visually-hidden">Спецпредложения</h2>
+				<ul class="promo__list">
+					<li class="promo__item">
+						<h3 class="promo__title">Специальные цены<br>всю зиму</h3>
+						<a class="button button--square button--green button--t-up promo__link" href="">Подробнее</a>
+					</li>
+				</ul>
+			</section>
+			<section class="container small-catalog">
+				<h2 class="visually-hidden">Популярные товары и новинки</h2>
+				<header class="small-catalog__header"></header>
+				<ul class="small-catalog__list">
+					<li class="small-catalog__item small-cat-card">
+						<a class="small-cat-card__picture-link" href="">
+							<img class="" src="" alt="Posuda Planet" width="100" height="100">
+						</a>
+						<span class="small-cat-card__article">Артикул: MB-80041</span>
+						<h3 class="small-cat-card__title">Ковш 1,25 л 14 см с крышкой Mayer&Boch</h3>
+						<p class="small-cat-card__price"><span>Цена:</span><br><b>780 Р</b></p>
+						<a class="button button--green-outline small-cat-card__button" href="">Купить</a>
+					</li>
+					<li class="small-catalog__item small-cat-card">
+						<a class="small-cat-card__picture-link" href="">
+							<img class="" src="" alt="Posuda Planet" width="100" height="100">
+						</a>
+						<span class="small-cat-card__article">Артикул: MB-80041</span>
+						<h3 class="small-cat-card__title">Ковш 1,25 л 14 см с крышкой Mayer&Boch</h3>
+						<p class="small-cat-card__price"><span>Цена:</span><br><b>780 Р</b></p>
+						<a class="button button--green-outline small-cat-card__button" href="">Купить</a>
+					</li>
+					<li class="small-catalog__item small-cat-card">
+						<a class="small-cat-card__picture-link" href="">
+							<img class="" src="" alt="Posuda Planet" width="100" height="100">
+						</a>
+						<span class="small-cat-card__article">Артикул: MB-80041</span>
+						<h3 class="small-cat-card__title">Ковш 1,25 л 14 см с крышкой Mayer&Boch</h3>
+						<p class="small-cat-card__price"><span>Цена:</span><br><b>780 Р</b></p>
+						<a class="button button--green-outline small-cat-card__button" href="">Купить</a>
+					</li>
+					<li class="small-catalog__item small-cat-card">
+						<a class="small-cat-card__picture-link" href="">
+							<img class="" src="" alt="Posuda Planet" width="100" height="100">
+						</a>
+						<span class="small-cat-card__article">Артикул: MB-80041</span>
+						<h3 class="small-cat-card__title">Ковш 1,25 л 14 см с крышкой Mayer&Boch</h3>
+						<p class="small-cat-card__price"><span>Цена:</span><br><b>780 Р</b></p>
+						<a class="button button--green-outline small-cat-card__button" href="">Купить</a>
+					</li>
+					<li class="small-catalog__item small-cat-card">
+						<a class="small-cat-card__picture-link" href="">
+							<img class="" src="" alt="Posuda Planet" width="100" height="100">
+						</a>
+						<span class="small-cat-card__article">Артикул: MB-80041</span>
+						<h3 class="small-cat-card__title">Ковш 1,25 л 14 см с крышкой Mayer&Boch</h3>
+						<p class="small-cat-card__price"><span>Цена:</span><br><b>780 Р</b></p>
+						<a class="button button--green-outline small-cat-card__button" href="">Купить</a>
+					</li>
+					<li class="small-catalog__item small-cat-card">
+						<a class="small-cat-card__picture-link" href="">
+							<img class="" src="" alt="Posuda Planet" width="100" height="100">
+						</a>
+						<span class="small-cat-card__article">Артикул: MB-80041</span>
+						<h3 class="small-cat-card__title">Ковш 1,25 л 14 см с крышкой Mayer&Boch</h3>
+						<p class="small-cat-card__price"><span>Цена:</span><br><b>780 Р</b></p>
+						<a class="button button--green-outline small-cat-card__button" href="">Купить</a>
+					</li>
+					<li class="small-catalog__item small-cat-card">
+						<a class="small-cat-card__picture-link" href="">
+							<img class="" src="" alt="Posuda Planet" width="100" height="100">
+						</a>
+						<span class="small-cat-card__article">Артикул: MB-80041</span>
+						<h3 class="small-cat-card__title">Ковш 1,25 л 14 см с крышкой Mayer&Boch</h3>
+						<p class="small-cat-card__price"><span>Цена:</span><br><b>780 Р</b></p>
+						<a class="button button--green-outline small-cat-card__button" href="">Купить</a>
+					</li>
+					<li class="small-catalog__item small-cat-card">
+						<a class="small-cat-card__picture-link" href="">
+							<img class="" src="" alt="Posuda Planet" width="100" height="100">
+						</a>
+						<span class="small-cat-card__article">Артикул: MB-80041</span>
+						<h3 class="small-cat-card__title">Ковш 1,25 л 14 см с крышкой Mayer&Boch</h3>
+						<p class="small-cat-card__price"><span>Цена:</span><br><b>780 Р</b></p>
+						<a class="button button--green-outline small-cat-card__button" href="">Купить</a>
+					</li>
+					<li class="small-catalog__item small-cat-card">
+						<a class="small-cat-card__picture-link" href="">
+							<img class="" src="" alt="Posuda Planet" width="100" height="100">
+						</a>
+						<span class="small-cat-card__article">Артикул: MB-80041</span>
+						<h3 class="small-cat-card__title">Ковш 1,25 л 14 см с крышкой Mayer&Boch</h3>
+						<p class="small-cat-card__price"><span>Цена:</span><br><b>780 Р</b></p>
+						<a class="button button--green-outline small-cat-card__button" href="">Купить</a>
+					</li>
+					<li class="small-catalog__item small-cat-card">
+						<a class="small-cat-card__picture-link" href="">
+							<img class="" src="" alt="Posuda Planet" width="100" height="100">
+						</a>
+						<span class="small-cat-card__article">Артикул: MB-80041</span>
+						<h3 class="small-cat-card__title">Ковш 1,25 л 14 см с крышкой Mayer&Boch</h3>
+						<p class="small-cat-card__price"><span>Цена:</span><br><b>780 Р</b></p>
+						<a class="button button--green-outline small-cat-card__button" href="">Купить</a>
+					</li>
+					<li class="small-catalog__item small-cat-card">
+						<a class="small-cat-card__picture-link" href="">
+							<img class="" src="" alt="Posuda Planet" width="100" height="100">
+						</a>
+						<span class="small-cat-card__article">Артикул: MB-80041</span>
+						<h3 class="small-cat-card__title">Ковш 1,25 л 14 см с крышкой Mayer&Boch</h3>
+						<p class="small-cat-card__price"><span>Цена:</span><br><b>780 Р</b></p>
+						<a class="button button--green-outline small-cat-card__button" href="">Купить</a>
+					</li>
+					<li class="small-catalog__item small-cat-card">
+						<a class="small-cat-card__picture-link" href="">
+							<img class="" src="" alt="Posuda Planet" width="100" height="100">
+						</a>
+						<span class="small-cat-card__article">Артикул: MB-80041</span>
+						<h3 class="small-cat-card__title">Ковш 1,25 л 14 см с крышкой Mayer&Boch</h3>
+						<p class="small-cat-card__price"><span>Цена:</span><br><b>780 Р</b></p>
+						<a class="button button--green-outline small-cat-card__button" href="">Купить</a>
+					</li>
+					<li class="small-catalog__item small-cat-card">
+						<a class="small-cat-card__picture-link" href="">
+							<img class="" src="" alt="Posuda Planet" width="100" height="100">
+						</a>
+						<span class="small-cat-card__article">Артикул: MB-80041</span>
+						<h3 class="small-cat-card__title">Ковш 1,25 л 14 см с крышкой Mayer&Boch</h3>
+						<p class="small-cat-card__price"><span>Цена:</span><br><b>780 Р</b></p>
+						<a class="button button--green-outline small-cat-card__button" href="">Купить</a>
+					</li>
+					<li class="small-catalog__item small-cat-card">
+						<a class="small-cat-card__picture-link" href="">
+							<img class="" src="" alt="Posuda Planet" width="100" height="100">
+						</a>
+						<span class="small-cat-card__article">Артикул: MB-80041</span>
+						<h3 class="small-cat-card__title">Ковш 1,25 л 14 см с крышкой Mayer&Boch</h3>
+						<p class="small-cat-card__price"><span>Цена:</span><br><b>780 Р</b></p>
+						<a class="button button--green-outline small-cat-card__button" href="">Купить</a>
+					</li>
+					<li class="small-catalog__item small-cat-card">
+						<a class="small-cat-card__picture-link" href="">
+							<img class="" src="" alt="Posuda Planet" width="100" height="100">
+						</a>
+						<span class="small-cat-card__article">Артикул: MB-80041</span>
+						<h3 class="small-cat-card__title">Ковш 1,25 л 14 см с крышкой Mayer&Boch</h3>
+						<p class="small-cat-card__price"><span>Цена:</span><br><b>780 Р</b></p>
+						<a class="button button--green-outline small-cat-card__button" href="">Купить</a>
+					</li>
+				</ul>
+			</section>
+			<section class="container advantages">
+				<h2 class="advantages__title">Что такое PosudaPlanet?</h2>
+				<ul class="advantages__list">
+					<li class="advantage advantages__item">
+						<h3 class="advantage__title">О продукции</h3>
+						<p class="advantage__desc">kjshdjkf hsdkjfh kjsh fksfkj</p>
+					</li>
+					<li class="advantage advantages__item">
+						<h3 class="advantage__title">Об интернет-магазине</h3>
+						<p class="advantage__desc">kjshdjkf hsdkjfh kjsh fksfkj</p>
+					</li>
+					<li class="advantage advantages__item">
+						<h3 class="advantage__title">Удобный сервис</h3>
+						<p class="advantage__desc">kjshdjkf hsdkjfh kjsh fksfkj</p>
+					</li>
+					<li class="advantage advantages__item">
+						<h3 class="advantage__title">Скидка 5% постоянным клиентам</h3>
+						<p class="advantage__desc">kjshdjkf hsdkjfh kjsh fksfkj</p>
+					</li>
+				</ul>
+			</section>
+			<section class="pop-categories">
+				<div class="container">
+					<h2 class="pop-categories__title">Популярные категории</h2>
+				</div>
+			</section>
+			<section class="last-articles">
+				<div class="container">
+					<div class="flex-art-wrapper">
+						<h2 class="last-articles__title">Последние статьи</h2>
+						<a class="button button--gray last-articles__to-all" href="">Показать все</a>
+					</div>
+					<ul class="last-articles__list">
+						<li class="last-articles__item">
+							<h3 class="last-articles__title">Польза и вред медной посуды</h3>
+							<p class="last-articles__text">Многие считают, что медная посуда - это роскошь. Но в то же время готовка пищи в ней...</p>
+							<time class="last-articles__time" datetime="2018-04-17">17 апреля 2018</time>
+						</li>
+						<li class="last-articles__item">
+							<h3 class="last-articles__title">Польза и вред медной посуды</h3>
+							<p class="last-articles__text">Многие считают, что медная посуда - это роскошь. Но в то же время готовка пищи в ней...</p>
+							<time class="last-articles__time" datetime="2018-04-17">17 апреля 2018</time>
+						</li>
+						<li class="last-articles__item">
+							<h3 class="last-articles__title">Польза и вред медной посуды</h3>
+							<p class="last-articles__text">Многие считают, что медная посуда - это роскошь. Но в то же время готовка пищи в ней...</p>
+							<time class="last-articles__time" datetime="2018-04-17">17 апреля 2018</time>
+						</li>
+						<li class="last-articles__item">
+							<h3 class="last-articles__title">Польза и вред медной посуды</h3>
+							<p class="last-articles__text">Многие считают, что медная посуда - это роскошь. Но в то же время готовка пищи в ней...</p>
+							<time class="last-articles__time" datetime="2018-04-17">17 апреля 2018</time>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+		<footer class="page-footer container">
+			<div>
+				<nav class="footer-menu">
+					<ul class="footer-menu__list">
+						<li class="footer-menu__item">
+							<a href="">Каталог</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="">О нас</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="">Корзина</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="">Гарантия и возврат</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="">Доставка</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="">Оплата</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="">Контакты</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="">Задать вопрос</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="">Блог</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="">Карта сайта</a>
+						</li>
+					</ul>
+				</nav>
+				<a class="logo-link footer-menu__logo-link">
+					<img class="logo-image mfooter-menu__logo-image" src="" alt="Posuda Planet" width="300" height="60">
+				</a>
+			</div>
+			<div class="contacts footer-menu__contacts">
+					<div class="contacts__wrapper">
+						<p class="contacts__time"><span>Время работы:</span><br><b>Ежедневно, 8:00 - 22:00</b></p>
+						<p class="contacts__phones"><b>8(495)532-45-24</b><br><b>8(495)532-45-24</b></p>
+					</div>
+					<a class="contacts__link" href="#">Заказать звонок</a>
+					<img class="contacts__payments" src="" alt="Payments" width="100" height="100">
+					<div class="social">
+						<ul class="social__list">
+							<li class="social__item">
+								<a href="#"><span class="visually-hidden">Мы в Вконтакте</span>ВК</a>
+							</li>
+							<li class="social__item">
+								<a href="#"><span class="visually-hidden">Мы в Вконтакте</span>ВК</a>
+							</li>
+							<li class="social__item">
+								<a href="#"><span class="visually-hidden">Мы в Вконтакте</span>ВК</a>
+							</li>
+						</ul>
+					</div>
+					<p class="develop"><span>Продвиженим сайта занимается </span><a href="">Азбука Seo</a></p>
+					<p class="develop"><span>Разработкой сайта занимается </span><a href="">Title.by</a></p>
+				</div>
+		</footer>
+	</body>
+</html>
