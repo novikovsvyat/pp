@@ -3,8 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Posuda Planet</title>
+		<link rel="stylesheet" href="css/owl.carousel.min.css">
+		<link rel="stylesheet" href="css/owl.theme.default.css">
 		<link rel="stylesheet" href="css/style.css">
-		<!--<link rel="preload" href="fonts/montserratregular.woff2" as="font">-->
 	</head>
 	<body>
 		<header class="page-header">
@@ -102,12 +103,42 @@
 			</section>
 			<section class="promo container">
 				<h2 class="visually-hidden">Спецпредложения</h2>
-				<ul class="promo__list">
-					<li class="promo__item">
-						<h3 class="promo__title">Специальные цены<br>всю зиму</h3>
-						<a class="button button--square button--green button--t-up promo__link" href="">Подробнее</a>
-					</li>
-				</ul>
+				<div class="owl-carousel owl-theme owl-loaded">
+			    <div class="owl-stage-outer">
+		        <div class="owl-stage">
+	            <div class="owl-item">
+	            	<div class="promo__item">
+	            		<h3 class="promo__title">Специальные цены<br>всю зиму</h3>
+									<a class="button button--square button--green button--t-up promo__link" href="">Подробнее</a>
+	            	</div>
+							</div>
+							<div class="owl-item">
+	            	<div class="promo__item">
+	            		<h3 class="promo__title">Специальные цены<br>всю зиму</h3>
+									<a class="button button--square button--green button--t-up promo__link" href="">Подробнее</a>
+	            	</div>
+							</div>
+							<div class="owl-item">
+	            	<div class="promo__item">
+	            		<h3 class="promo__title">Специальные цены<br>всю зиму</h3>
+									<a class="button button--square button--green button--t-up promo__link" href="">Подробнее</a>
+	            	</div>
+							</div>
+							<div class="owl-item">
+	            	<div class="promo__item">
+	            		<h3 class="promo__title">Специальные цены<br>всю зиму</h3>
+									<a class="button button--square button--green button--t-up promo__link" href="">Подробнее</a>
+	            	</div>
+							</div>
+							<div class="owl-item">
+	            	<div class="promo__item">
+	            		<h3 class="promo__title">Специальные цены<br>всю зиму</h3>
+									<a class="button button--square button--green button--t-up promo__link" href="">Подробнее</a>
+	            	</div>
+							</div>
+		        </div>
+			    </div>
+				</div>
 			</section>
 			<section class="container small-catalog">
 				<h2 class="visually-hidden">Популярные товары и новинки</h2>
@@ -349,6 +380,7 @@
 			<section class="pop-categories">
 				<div class="container">
 					<h2 class="pop-categories__title">Популярные категории</h2>
+
 				</div>
 			</section>
 			<section class="last-articles">
@@ -446,5 +478,18 @@
 					<p class="develop"><span>Разработкой сайта занимается </span><a href="">Title.by</a></p>
 				</div>
 		</footer>
+		<script src="js/jquery/dist/jquery.js"></script>
+		<script src="js/owl.carousel/dist/owl.carousel.min.js"></script>
+		<script>
+			$(document).ready(function(){
+			  $('.owl-carousel').owlCarousel({
+			    items:1,
+			    loop:true,
+			    nav:true,
+				  autoplay:true,
+	    		autoplayTimeout:5000,
+	    		autoplayHoverPause:true})
+				});
+		</script>
 	</body>
 </html>
