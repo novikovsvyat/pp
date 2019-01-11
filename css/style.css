@@ -533,7 +533,7 @@ ul {
 .small-catalog__list {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 84px
+    margin-top: 85px
 }
 
 .small-catalog__item {
@@ -541,12 +541,8 @@ ul {
     border-left: none;
     background-color: #fff;
     width: 205px;
-    min-height: 319px
-}
-
-.advantages__item,.last-articles__item {
-    border-radius: 5px;
-    box-shadow: 0 2px 6px rgba(0,0,0,.13);
+    padding: 0 10px;
+    padding-bottom: 19px;
 }
 
 .small-catalog__item:first-child,.small-catalog__item:nth-child(5n+1) {
@@ -558,8 +554,62 @@ ul {
 }
 
 .small-cat-card__picture-link {
+    display: flex;
+    height: 185px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.small-cat-card__article {
+	font-family: OpenSans,Arial,sans-serif;
+    text-transform: uppercase;
+    font-size: 10px;
     display: block;
-    height: 185px
+    margin-bottom: 7px;
+    color: #999999;
+}
+
+.small-cat-card__title {
+	font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 9px;
+}
+
+.small-cat-card__button {
+	width: auto;
+    font-weight: 700;
+    flex-grow: 1;
+}
+
+.small-cat-card__price-button-wrapper {
+	display: flex;
+    align-items: center;
+}
+
+.small-cat-card__price {
+	margin-right: 17px;
+}
+
+.small-cat-card__price-term {
+	font-size: 10px;
+    line-height: 13px;
+    font-weight: 700;
+    color: #999999;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.small-cat-card__price-def {
+	font-size: 18px;
+    line-height: 24px;
+    font-family: OpenSans,Arial,sans-serif;
+}
+
+.advantages__item,.last-articles__item {
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.13);
 }
 
 .advantages {
@@ -633,10 +683,6 @@ ul {
 .advantage--discount::after {
     background-image: url(../img/discount.svg);
 }
-
-
-
-
 
 .advantage__title {
     margin-bottom: 9px;
