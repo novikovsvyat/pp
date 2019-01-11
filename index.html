@@ -399,26 +399,34 @@
 						<h2 class="last-articles__title">Последние статьи</h2>
 						<a class="button button--gray last-articles__to-all" href="">Показать все</a>
 					</div>
-					<ul class="last-articles__list">
-						<li class="last-articles__item">
-							<h3 class="last-articles__title">Польза и вред медной посуды</h3>
-							<p class="last-articles__text">Многие считают, что медная посуда - это роскошь. Но в то же время готовка пищи в ней...</p>
-							<time class="last-articles__time" datetime="2018-04-17">17 апреля 2018</time>
+					<ul class="last-article">
+						<li class="last-article__item last-article--med">
+							<a href="">
+								<h3 class="last-article__title">Польза и вред медной посуды</h3>
+								<p class="last-article__text">Многие считают, что медная посуда - это роскошь. Но в то же время готовка пищи в ней...</p>
+								<time class="last-article__time" datetime="2018-04-17">17 Апреля 2018</time>
+							</a>
 						</li>
-						<li class="last-articles__item">
-							<h3 class="last-articles__title">Польза и вред медной посуды</h3>
-							<p class="last-articles__text">Многие считают, что медная посуда - это роскошь. Но в то же время готовка пищи в ней...</p>
-							<time class="last-articles__time" datetime="2018-04-17">17 апреля 2018</time>
+						<li class="last-article__item last-article--keram">
+							<a href="">
+								<h3 class="last-article__title">Как заточить керамический нож</h3>
+								<p class="last-article__text">Нож из керамики – новинка, которая вызвала массу сомнений у ценителей качественной посуды...</p>
+								<time class="last-article__time" datetime="2018-02-26">26 Февраля 2018</time>
+							</a>
 						</li>
-						<li class="last-articles__item">
-							<h3 class="last-articles__title">Польза и вред медной посуды</h3>
-							<p class="last-articles__text">Многие считают, что медная посуда - это роскошь. Но в то же время готовка пищи в ней...</p>
-							<time class="last-articles__time" datetime="2018-04-17">17 апреля 2018</time>
+						<li class="last-article__item last-article--skov">
+							<a href="">
+								<h3 class="last-article__title">Как выбрать сковородку?</h3>
+								<p class="last-article__text">От того, хотите Вы печь блины, готовить рагу или поджаривать стейк, а также от того...</p>
+								<time class="last-article__time" datetime="2017-09-07">7 Сентября 2017</time>
+							</a>
 						</li>
-						<li class="last-articles__item">
-							<h3 class="last-articles__title">Польза и вред медной посуды</h3>
-							<p class="last-articles__text">Многие считают, что медная посуда - это роскошь. Но в то же время готовка пищи в ней...</p>
-							<time class="last-articles__time" datetime="2018-04-17">17 апреля 2018</time>
+						<li class="last-article__item last-article--prib">
+							<a href="">
+								<h3 class="last-article__title">Чистка столовых приборов</h3>
+								<p class="last-article__text">ИНТЕРЕСНО ЗНАТЬ! На элитные столовые приборы и другие красивые предметы сервировки...</p>
+								<time class="last-article__time" datetime="2017-08-02">2 Августа 2017</time>
+							</a>
 						</li>
 					</ul>
 				</div>
@@ -460,17 +468,23 @@
 						</li>
 					</ul>
 				</nav>
-				<a class="logo-link footer-menu__logo-link">
-					<img class="logo-image mfooter-menu__logo-image" src="" alt="Posuda Planet" width="300" height="60">
+				<a class="logo-link footer-menu__logo-link" href="">
+					<img class="logo-image mfooter-menu__logo-image" src="img/logo.svg" alt="Posuda Planet" width="224" height="48">
 				</a>
 			</div>
-			<div class="contacts footer-menu__contacts">
-					<div class="contacts__wrapper">
-						<p class="contacts__time"><span>Время работы:</span><br><b>Ежедневно, 8:00 - 22:00</b></p>
-						<p class="contacts__phones"><b>8(495)532-45-24</b><br><b>8(495)532-45-24</b></p>
+			<div class="footer-info">
+					<div class="footer-contacts__wrapper">
+						<p class="footer-contacts footre-contacts--l">
+							<span class="f-contacts__desc">Время работы</span>
+							<b class="f-contacts__time">Ежедневно, 8:00 &mdash; 22:00</b>
+						</p>
+						<p class="footer-contacts">
+							<b class="f-contacts__phone">8 (495) 532-45-24</b>
+							<b class="f-contacts__phone">8 (495) 532-45-24</b>
+						</p>
 					</div>
-					<a class="contacts__link" href="#">Заказать звонок</a>
-					<img class="contacts__payments" src="" alt="Payments" width="100" height="100">
+					<a class="f-contacts__link" href="#">Заказать звонок</a>
+					<img class="f-contacts__payments" src="img/payments.png" alt="Payments" width="299" height="49">
 					<div class="social">
 						<ul class="social__list">
 							<li class="social__item">
@@ -484,8 +498,8 @@
 							</li>
 						</ul>
 					</div>
-					<p class="develop"><span>Продвиженим сайта занимается </span><a href="">Азбука Seo</a></p>
-					<p class="develop"><span>Разработкой сайта занимается </span><a href="">Title.by</a></p>
+					<p class="develop"><span>Продвиженим сайта занимается </span><a class="develop-link" href="">Азбука Seo</a></p>
+					<p class="develop"><span>Разработкой сайта занимается </span><a class="develop-link" href="">Title.by</a></p>
 				</div>
 		</footer>
 		<script src="js/jquery/dist/jquery.js"></script>
