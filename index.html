@@ -3,48 +3,64 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Posuda Planet</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="format-detection" content="telephone=no">
 		<link rel="stylesheet" href="css/owl.carousel.min.css">
 		<link rel="stylesheet" href="css/owl.theme.default.min.css">
+		<link rel="stylesheet" href="css/defaults.css">
+		<link rel="stylesheet" href="css/fonts.css">
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/footer.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 		<header class="page-header">
 			<nav class="main-menu">
 				<div class="container main-menu__container">
-					<a class="logo-link main-menu__logo-link" href="#">
-						<img class="logo-image main-menu__logo-image" src="img/logo.svg" alt="Posuda Planet" width="224" height="48">
-					</a>
-					<ul class="main-menu__list">
-						<li class="main-menu__item">
-							<a href="">Акции</a>
-						</li>
-						<li class="main-menu__item">
-							<a href="">О нас</a>
-						</li>
-						<li class="main-menu__item">
-							<a href="">Бренды</a>
-						</li>
-						<li class="main-menu__item">
-							<a href="">Блог</a>
-						</li>
-						<li class="main-menu__item">
-							<a href="">Доставка</a>
-						</li>
-						<li class="main-menu__item">
-							<a href="">Оплата</a>
-						</li>
-						<li class="main-menu__item">
-							<a href="">Контакты</a>
-						</li>
-					</ul>
-					<ul class="user-menu__list">
-						<li class="user-menu__item">
-							<a href="">Вход</a>
-						</li>
-						<li class="user-menu__item">
-							<a href="">Регистрация</a>
-						</li>
-					</ul>
+					<div class="main-menu__head">
+						<a class="logo-link main-menu__logo-link" href="#">
+							<img class="logo-image main-menu__logo-image" src="img/logo.svg" alt="Posuda Planet" width="224" height="48">
+						</a>
+						<button class="main-menu__toogle mm-button" type="button">
+            	<span class="visually-hidden">Открыть меню</span>
+          	</button>
+          	<button class="user-menu__toogle um-button" type="button">
+            	<span class="visually-hidden">Открыть корзину</span>
+          	</button>
+					</div>
+					<div class="menu-wrapper">
+						<ul class="user-menu__list">
+							<li class="user-menu__item">
+								<a class="user-menu__link" href="#">Вход</a>
+							</li>
+							<li class="user-menu__item">
+								<a class="user-menu__link user-menu__link--green" href="#">Регистрация</a>
+							</li>
+						</ul>
+						<ul class="main-menu__list">
+							<li class="main-menu__item">
+								<a class="main-menu__link" href="">Акции</a>
+							</li>
+							<li class="main-menu__item">
+								<a class="main-menu__link" href="">О нас</a>
+							</li>
+							<li class="main-menu__item">
+								<a class="main-menu__link" href="">Бренды</a>
+							</li>
+							<li class="main-menu__item">
+								<a class="main-menu__link" href="">Блог</a>
+							</li>
+							<li class="main-menu__item">
+								<a class="main-menu__link" href="">Доставка</a>
+							</li>
+							<li class="main-menu__item">
+								<a class="main-menu__link" href="">Оплата</a>
+							</li>
+							<li class="main-menu__item">
+								<a class="main-menu__link" href="">Контакты</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</nav>
 			<div class="container add-menu">
@@ -54,14 +70,22 @@
 						<input class="search__input" type="text" name="main-search" id="main-search" value="" placeholder="Например: ножи керамические">
 						<button class="visually-hidden" type="submit">Поиск</button>
 					</form>
-					<a class="button button--white button--fat" href="#">Заказать звонок</a>
-					<p class="contacts">
-						<b class="contacts__phone">8 (495) 532-45-24</b>
-						<b class="contacts__phone">8 (495) 532-45-24</b>
-						<small class="contacts__time">Ежедневно 8:00 &mdash; 22:00</small>
-					</p>
+					<div class="h-contacts">
+						<p class="h-contacts__times">
+							<span class="h-contacts__desc">Время работы</span>
+							<b class="h-contacts__time">Ежедневно, 8:00 &mdash; 22:00</b>
+						</p>
+						<p class="h-contacts__phones">
+							<b class="h-contacts__phone">8 (495) 532-45-24</b>
+							<b class="h-contacts__phone">8 (495) 532-45-24</b>
+						</p>
+					</div>
+					<div class="h-contacts__wrapper">
+						<a class="h-contacts__link" href="#">Заказать звонок</a>
+					</div>
 				</div>
-				<div class="cart-menu">
+			</div>
+			<div class="cart-menu" style="display: none;">
 					<span class="cart-menu__title">В корзине</span>
 					<ul class="cart-menu__list">
 						<li class="cart-menu__item">
@@ -75,7 +99,6 @@
 					</ul>
 					<a class="button button--green button--t-up cart-menu__link" href="">Корзина</a>
 				</div>
-			</div>
 		</header>
 		<main class="page-main">
 			<h1 class="visually-hidden">Магазин посуды Posuda Planet</h1>
@@ -2101,71 +2124,85 @@
 			</section>
 		</main>
 		<footer class="page-footer container">
-			<div>
+			<div class="footer-t">
 				<nav class="footer-menu">
 					<ul class="footer-menu__list">
 						<li class="footer-menu__item">
-							<a href="">Каталог</a>
+							<a class="footer-menu__link" href="">Каталог</a>
 						</li>
 						<li class="footer-menu__item">
-							<a href="">О нас</a>
+							<a class="footer-menu__link" href="">Корзина</a>
 						</li>
 						<li class="footer-menu__item">
-							<a href="">Корзина</a>
+							<a class="footer-menu__link" href="">Гарантия и возврат</a>
 						</li>
 						<li class="footer-menu__item">
-							<a href="">Гарантия и возврат</a>
+							<a class="footer-menu__link" href="">Оплата</a>
 						</li>
 						<li class="footer-menu__item">
-							<a href="">Доставка</a>
+							<a class="footer-menu__link" href="">Контакты</a>
 						</li>
 						<li class="footer-menu__item">
-							<a href="">Оплата</a>
+							<a class="footer-menu__link" href="">Блог</a>
 						</li>
 						<li class="footer-menu__item">
-							<a href="">Контакты</a>
+							<a class="footer-menu__link" href="">Карта сайта</a>
 						</li>
 						<li class="footer-menu__item">
-							<a href="">Задать вопрос</a>
+							<a class="footer-menu__link" href="">Доставка</a>
 						</li>
 						<li class="footer-menu__item">
-							<a href="">Блог</a>
+							<a class="footer-menu__link" href="">О нас</a>
 						</li>
 						<li class="footer-menu__item">
-							<a href="">Карта сайта</a>
+							<a class="footer-menu__link" href="">Задать вопрос</a>
 						</li>
 					</ul>
 				</nav>
-				<a class="logo-link footer-menu__logo-link" href="">
-					<img class="logo-image mfooter-menu__logo-image" src="img/logo.svg" alt="Posuda Planet" width="224" height="48">
-				</a>
-			</div>
-			<div class="footer-info">
-					<div class="footer-contacts__wrapper">
-						<p class="footer-contacts footre-contacts--l">
+				<div class="footer-t__wrapper">
+					<div class="f-contacts">
+						<p class="f-contacts__times">
 							<span class="f-contacts__desc">Время работы</span>
 							<b class="f-contacts__time">Ежедневно, 8:00 &mdash; 22:00</b>
 						</p>
-						<p class="footer-contacts">
+						<p class="f-contacts__phones">
 							<b class="f-contacts__phone">8 (495) 532-45-24</b>
 							<b class="f-contacts__phone">8 (495) 532-45-24</b>
 						</p>
 					</div>
-					<a class="f-contacts__link" href="#">Заказать звонок</a>
-					<img class="f-contacts__payments" src="img/payments.png" alt="Payments" width="299" height="49">
-					<div class="social">
-						<ul class="social__list">
-							<li class="social__item">
-								<a href="#">
-									<span class="visually-hidden">Мы в Вконтакте</span>
-									<img class="" src="img/vk.svg" alt="ВК" width="24" height="14">
-								</a>
-							</li>
-						</ul>
+					<div class="f-contacts__wrapper">
+						<a class="f-contacts__link" href="#">Заказать звонок</a>
+						<img class="f-contacts__payments" src="img/payments.png" alt="Payments" width="299" height="49">
 					</div>
-					<p class="develop"><span>Продвижением сайта занимается </span><a class="develop-link" href="">Азбука Seo</a></p>
-					<p class="develop"><span>Разработкой сайта занимается </span><a class="develop-link" href="">Title.by</a></p>
 				</div>
+			</div>
+
+			<div class="social">
+				<ul class="social__list">
+					<li class="social__item">
+						<a class="social__link" href="#">
+							<span class="visually-hidden">Мы в Вконтакте</span>
+							<img class="" src="img/vk.svg" alt="ВК" width="24" height="14">
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="footer-b">
+				<a class="logo-link footer-b__logo-link" href="">
+					<img class="logo-image footer-b__logo-image" src="img/logo.svg" alt="Posuda Planet" width="224" height="48">
+				</a>
+				<div class="footer-b__develop">
+					<p class="footer-b__developer">
+						<span>Продвижением сайта занимается </span>
+						<a class="footer-b__developer-link" href="">Азбука Seo</a>
+					</p>
+					<p class="footer-b__developer">
+						<span>Разработкой сайта занимается </span>
+						<a class="footer-b__developer-link" href="">Title.by</a>
+					</p>
+				</div>
+			</div>
 		</footer>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/owl.carousel.min.js"></script>

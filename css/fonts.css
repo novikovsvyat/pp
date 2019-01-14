@@ -1,0 +1,48 @@
+@font-face {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-style: normal;
+    font-display:swap;src: url(../fonts/montserratregular.woff2) format("woff2"),url(../fonts/montserratregular.woff) format("woff")
+}
+
+@font-face {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: normal;
+    font-display:swap;src: url(../fonts/montserratmedium.woff2) format("woff2"),url(../fonts/montserratmedium.woff) format("woff")
+}
+
+@font-face {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-style: normal;
+    font-display:swap;src: url(../fonts/montserratsemibold.woff2) format("woff2"),url(../fonts/montserratsemibold.woff) format("woff")
+}
+
+@font-face {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: normal;
+    font-display:swap;src: url(../fonts/montserratbold.woff2) format("woff2"),url(../fonts/montserratbold.woff) format("woff")
+}
+
+@font-face {
+    font-family: OpenSans;
+    font-weight: 700;
+    font-style: normal;
+    font-display:swap;src: url(../fonts/opensansbold.woff2) format("woff2"),url(../fonts/opensansbold.woff) format("woff")
+}
+
+@font-face {
+    font-family: OpenSans;
+    font-weight: 400;
+    font-style: normal;
+    font-display:swap;src: url(../fonts/opensansregular.woff2) format("woff2"),url(../fonts/opensansregular.woff) format("woff")
+}
+
+@font-face {
+    font-family: OpenSans;
+    font-weight: 300;
+    font-style: normal;
+    font-display:swap;src: url(../fonts/opensanslight.woff2) format("woff2"),url(../fonts/opensanslight.woff) format("woff")
+}
