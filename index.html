@@ -1375,10 +1375,10 @@
 				<h2 class="visually-hidden">Популярные товары и новинки</h2>
 				<header class="small-catalog__header">
 				<ul class="toggle">
-					<li class="toggle__item">
+					<li class="toggle__item new-items-link">
 						<a class="toggle__link" href="">Новинки</a>
 					</li>
-					<li class="toggle__item toggle__item--active">
+					<li class="toggle__item best-seller-link toggle__item--active">
 						<a class="toggle__link" href="">Лидеры продаж</a>
 					</li>
 				</ul>
@@ -1623,79 +1623,98 @@
 					<p class="pop-categories__title">Популярные категории</p>
 					<div class="pop-categories__wrapper">
 						<aside class="pop-categories__filters">
-							<h2 class="visually-hidden">Типы популярных категорий</h2>
 							<ul class="pop-categories__f-list">
 								<li class="pop-categories__f-item">
-									<a class="pop-categories__f-link" href="">Сервировка</a>
+									<a class="pop-categories__f-link" onclick="openCat(event, 'servirovka')" href="">Сервировка</a>
 								</li>
 								<li class="pop-categories__f-item">
-									<a class="pop-categories__f-link" href="">Столовые приборы</a>
+									<a class="pop-categories__f-link" onclick="openCat(event, 'stolpribori')" href="">Столовые приборы</a>
 								</li>
 								<li class="pop-categories__f-item">
-									<a class="pop-categories__f-link" href="">Товары для пикника</a>
+									<a class="pop-categories__f-link" onclick="openCat(event, 'picnic')" href="">Товары для пикника</a>
 								</li>
 								<li class="pop-categories__f-item">
-									<a class="pop-categories__f-link" href="">Посуда</a>
-								</li>
-								<li class="pop-categories__f-item pop-categories__f-item--active">
-									<a class="pop-categories__f-link" href="">Кастрюли</a>
+									<a class="pop-categories__f-link" onclick="openCat(event, 'posuda')" href="">Посуда</a>
 								</li>
 								<li class="pop-categories__f-item">
-									<a class="pop-categories__f-link" href="">Сковороды</a>
+									<a class="pop-categories__f-link" onclick="openCat(event, 'kastruli')" href="" id="defaultOpen">Кастрюли</a>
 								</li>
 								<li class="pop-categories__f-item">
-									<a class="pop-categories__f-link" href="">Ковши</a>
+									<a class="pop-categories__f-link" onclick="openCat(event, 'skovorodi')" href="">Сковороды</a>
 								</li>
 								<li class="pop-categories__f-item">
-									<a class="pop-categories__f-link" href="">Крышки для посуды</a>
+									<a class="pop-categories__f-link" onclick="openCat(event, 'kovshi')" href="">Ковши</a>
 								</li>
 								<li class="pop-categories__f-item">
-									<a class="pop-categories__f-link" href="">Все для чая и кофе</a>
+									<a class="pop-categories__f-link" onclick="openCat(event, 'krishkiposud')" href="">Крышки для посуды</a>
 								</li>
 								<li class="pop-categories__f-item">
-									<a class="pop-categories__f-link" href="">Кухонные принадлежности</a>
+									<a class="pop-categories__f-link" onclick="openCat(event, 'teaandcofe')"href="">Все для чая и кофе</a>
 								</li>
 								<li class="pop-categories__f-item">
-									<a class="pop-categories__f-link" href="">Дуршлаги</a>
+									<a class="pop-categories__f-link" onclick="openCat(event, 'kuhprenadl')" href="">Кухонные принадлежности</a>
 								</li>
 								<li class="pop-categories__f-item">
-									<a class="pop-categories__f-link" href="">Весы кухонные</a>
+									<a class="pop-categories__f-link" onclick="openCat(event, 'durshlag')" href="">Дуршлаги</a>
 								</li>
 								<li class="pop-categories__f-item">
-									<a class="pop-categories__f-link" href="">Ножи</a>
+									<a class="pop-categories__f-link" onclick="openCat(event, 'vesi')" href="">Весы кухонные</a>
 								</li>
 								<li class="pop-categories__f-item">
-									<a class="pop-categories__f-link" href="">Подставки для ножей</a>
+									<a class="pop-categories__f-link" onclick="openCat(event, 'noji')" href="">Ножи</a>
 								</li>
 								<li class="pop-categories__f-item">
-									<a class="pop-categories__f-link" href="">Ножеточки</a>
+									<a class="pop-categories__f-link" onclick="openCat(event, 'podstavkinoji')" href="">Подставки для ножей</a>
 								</li>
 								<li class="pop-categories__f-item">
-									<a class="pop-categories__f-link" href="">Все для выпечки</a>
+									<a class="pop-categories__f-link" onclick="openCat(event, 'nojitochki')"href="">Ножеточки</a>
 								</li>
 								<li class="pop-categories__f-item">
-									<a class="pop-categories__f-link" href="">Текстиль для дома</a>
+									<a class="pop-categories__f-link" onclick="openCat(event, 'vipechka')" href="">Все для выпечки</a>
 								</li>
 								<li class="pop-categories__f-item">
-									<a class="pop-categories__f-link" href="">Сотейники</a>
+									<a class="pop-categories__f-link" onclick="openCat(event, 'tekstil')" href="">Текстиль для дома</a>
 								</li>
 								<li class="pop-categories__f-item">
-									<a class="pop-categories__f-link" href="">Медная посуда</a>
+									<a class="pop-categories__f-link" onclick="openCat(event, 'soteiniki')" href="">Сотейники</a>
 								</li>
 								<li class="pop-categories__f-item">
-									<a class="pop-categories__f-link" href="">Вилки кулинарные</a>
+									<a class="pop-categories__f-link" onclick="openCat(event, 'mednayaposuda')" href="">Медная посуда</a>
 								</li>
 								<li class="pop-categories__f-item">
-									<a class="pop-categories__f-link" href="">Аксессуары для посуды</a>
+									<a class="pop-categories__f-link" onclick="openCat(event, 'vilkikulinar')" href="">Вилки кулинарные</a>
 								</li>
 								<li class="pop-categories__f-item">
-									<a class="pop-categories__f-link" href="">Бар и стекло</a>
+									<a class="pop-categories__f-link" onclick="openCat(event, 'aksessuari')" href="">Аксессуары для посуды</a>
+								</li>
+								<li class="pop-categories__f-item">
+									<a class="pop-categories__f-link" onclick="openCat(event, 'barsteklo')" href="">Бар и стекло</a>
 								</li>
 							</ul>
 						</aside>
 						<section class="pop-categories__results">
 							<h2 class="visually-hidden">Популярные категории</h2>
-							<ul class="pop-categories__r-list">
+							<ul class="pop-categories__r-list" id="servirovka">
+								<li class="pop-categories__r-item">
+									<a class="pop-categories__r-link" href="">Сервировка</a>
+								</li>
+							</ul>
+							<ul class="pop-categories__r-list" id="stolpribori">
+								<li class="pop-categories__r-item">
+									<a class="pop-categories__r-link" href="">Столовые приборы</a>
+								</li>
+							</ul>
+							<ul class="pop-categories__r-list" id="picnic">
+								<li class="pop-categories__r-item">
+									<a class="pop-categories__r-link" href="">Товары для пикника</a>
+								</li>
+							</ul>
+							<ul class="pop-categories__r-list" id="posuda">
+								<li class="pop-categories__r-item">
+									<a class="pop-categories__r-link" href="">Посуда</a>
+								</li>
+							</ul>
+							<ul class="pop-categories__r-list" id="kastruli">
 								<li class="pop-categories__r-item">
 									<a class="pop-categories__r-link" href="">Кастрюли</a>
 								</li>
@@ -1951,6 +1970,92 @@
 								<li class="pop-categories__r-item">
 									<a class="pop-categories__r-link" href="">Кастрюли Risoli Fusion</a>
 								</li>
+
+							</ul>
+							<ul class="pop-categories__r-list" id="skovorodi">
+								<li class="pop-categories__r-item">
+									<a class="pop-categories__r-link" href="">Сковороды</a>
+								</li>
+							</ul>
+							<ul class="pop-categories__r-list" id="kovshi">
+								<li class="pop-categories__r-item">
+									<a class="pop-categories__r-link" href="">Ковши</a>
+								</li>
+							</ul>
+							<ul class="pop-categories__r-list" id="krishkiposud">
+								<li class="pop-categories__r-item">
+									<a class="pop-categories__r-link" href="">Крышки для посуды</a>
+								</li>
+							</ul>
+							<ul class="pop-categories__r-list" id="teaandcofe">
+								<li class="pop-categories__r-item">
+									<a class="pop-categories__r-link" href="">Все для чая и кофе</a>
+								</li>
+							</ul>
+							<ul class="pop-categories__r-list" id="kuhprenadl">
+								<li class="pop-categories__r-item">
+									<a class="pop-categories__r-link" href="">Кухонные пренадлежности</a>
+								</li>
+							</ul>
+							<ul class="pop-categories__r-list" id="durshlag">
+								<li class="pop-categories__r-item">
+									<a class="pop-categories__r-link" href="">Дуршлаги</a>
+								</li>
+							</ul>
+							<ul class="pop-categories__r-list" id="vesi">
+								<li class="pop-categories__r-item">
+									<a class="pop-categories__r-link" href="">Весы кухонные</a>
+								</li>
+							</ul>
+							<ul class="pop-categories__r-list" id="noji">
+								<li class="pop-categories__r-item">
+									<a class="pop-categories__r-link" href="">Ножи</a>
+								</li>
+							</ul>
+							<ul class="pop-categories__r-list" id="podstavkinoji">
+								<li class="pop-categories__r-item">
+									<a class="pop-categories__r-link" href="">Подставки для ножей</a>
+								</li>
+							</ul>
+							<ul class="pop-categories__r-list" id="nojitochki">
+								<li class="pop-categories__r-item">
+									<a class="pop-categories__r-link" href="">Ножеточки</a>
+								</li>
+							</ul>
+							<ul class="pop-categories__r-list" id="vipechka">
+								<li class="pop-categories__r-item">
+									<a class="pop-categories__r-link" href="">Все для выпечки</a>
+								</li>
+							</ul>
+							<ul class="pop-categories__r-list" id="tekstil">
+								<li class="pop-categories__r-item">
+									<a class="pop-categories__r-link" href="">Текстиль для дома</a>
+								</li>
+							</ul>
+							<ul class="pop-categories__r-list" id="soteiniki">
+								<li class="pop-categories__r-item">
+									<a class="pop-categories__r-link" href="">Сотейники</a>
+								</li>
+							</ul>
+							<ul class="pop-categories__r-list" id="mednayaposuda">
+								<li class="pop-categories__r-item">
+									<a class="pop-categories__r-link" href="">Медня посуда</a>
+								</li>
+							</ul>
+							<ul class="pop-categories__r-list" id="vilkikulinar">
+								<li class="pop-categories__r-item">
+									<a class="pop-categories__r-link" href="">Вилки кулинарные</a>
+								</li>
+							</ul>
+							<ul class="pop-categories__r-list" id="aksessuari">
+								<li class="pop-categories__r-item">
+									<a class="pop-categories__r-link" href="">Аксессуары для посуды</a>
+								</li>
+							</ul>
+							<ul class="pop-categories__r-list" id="barsteklo">
+								<li class="pop-categories__r-item">
+									<a class="pop-categories__r-link" href="">Бар и стекло</a>
+								</li>
 							</ul>
 						</section>
 					</div>
@@ -2064,12 +2169,14 @@
 		</footer>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/scripts.js"></script>
 		<script>
 			$(document).ready(function(){
 			  $('.owl-carousel').owlCarousel({
 			    items:1,
 			    loop:true,
-			    nav:true,
+			    nav: true,
+  			  navText: ["<div class='owlprev'></div>","<div class='owlnext'></div>"],
 				  autoplay:true,
 	    		autoplayTimeout:5000,
 	    		autoplayHoverPause:true})
