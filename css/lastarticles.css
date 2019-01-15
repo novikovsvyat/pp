@@ -32,7 +32,7 @@
 .last-article {
     display: flex;
     overflow: auto;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 .last-articles__to-all {
@@ -51,7 +51,7 @@
     border-radius: 5px;
     box-shadow: 0 2px 6px rgba(0,0,0,.13);
     flex-shrink: 0;
-    margin-right: 20px;
+    margin: 0 auto;
 }
 
 .last-article--med {
@@ -118,7 +118,7 @@
     }
 
     .last-article {
-        margin-bottom: 40px;
+        padding-bottom: 40px;
     }
 }
 
@@ -152,6 +152,7 @@
         width: 100%;
         justify-content: space-between;
         order: 3;
+        padding-bottom: 0;
         margin-top: 30px;
         margin-bottom: 10px;
     }

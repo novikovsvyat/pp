@@ -52,6 +52,11 @@
     right: 80px
 }
 
+.mm-button, .um-button {
+    background-color: #ffffff;
+}
+
+
 .mm-button::before,.um-button::before {
     content: "";
     right: 0

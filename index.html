@@ -1364,7 +1364,7 @@
 			</section>
 			<section class="promo container">
 				<h2 class="visually-hidden">Спецпредложения</h2>
-				<div class="owl-carousel owl-theme owl-loaded">
+				<div class="top owl-carousel owl-theme owl-loaded">
 			    <div class="owl-stage-outer">
 		        <div class="owl-stage">
 	            <div class="owl-item">
@@ -2092,7 +2092,7 @@
 			<section class="last-articles">
 				<div class="container last-articles__wrapper">
 					<h2 class="last-articles__title">Последние статьи</h2>
-					<ul class="last-article">
+					<ul class="last-article bottom owl-carousel owl-theme">
 						<li class="last-article__item last-article--med">
 							<a href="">
 								<h3 class="last-article__title">Польза и вред медной посуды</h3>
@@ -2179,7 +2179,6 @@
 					</div>
 				</div>
 			</div>
-
 			<div class="social">
 				<ul class="social__list">
 					<li class="social__item">
@@ -2190,7 +2189,6 @@
 					</li>
 				</ul>
 			</div>
-
 			<div class="footer-b">
 				<a class="logo-link footer-b__logo-link" href="">
 					<img class="logo-image footer-b__logo-image" src="img/logo.svg" alt="Posuda Planet" width="224" height="48">
@@ -2212,15 +2210,36 @@
 		<script src="js/scripts.js"></script>
 		<script>
 			$(document).ready(function(){
-			  $('.owl-carousel').owlCarousel({
+			  $('.top').owlCarousel({
 			    items:1,
 			    loop:true,
-			    nav: true,
+			    nav:true,
   			  navText: ["<div class='owlprev'></div>","<div class='owlnext'></div>"],
 				  autoplay:true,
 	    		autoplayTimeout:5000,
-	    		autoplayHoverPause:true})
-				});
+	    		autoplayHoverPause:true});
+
+			  $('.bottom').owlCarousel({
+			  	dots:true,
+			  	nav:false,
+  			  responsiveClass:true,
+	    		responsive:{
+		        1:{
+		            items:1,
+		        },
+		        600:{
+		            items:2,
+		        },
+		        900:{
+		            items:3,
+		        },
+		        1065:{
+		        		margin:10,
+		            items:4
+		        }
+		    	}
+		  	});
+			});
 		</script>
 	</body>
 </html>
