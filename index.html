@@ -7,16 +7,21 @@
 		<meta name="format-detection" content="telephone=no">
 		<link rel="stylesheet" href="css/owl.carousel.min.css">
 		<link rel="stylesheet" href="css/owl.theme.default.min.css">
+		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/defaults.css">
 		<link rel="stylesheet" href="css/fonts.css">
 		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/promo.css">
+		<link rel="stylesheet" href="css/smallcatalog.css">
+		<link rel="stylesheet" href="css/advantages.css">
+		<link rel="stylesheet" href="css/lastarticles.css">
 		<link rel="stylesheet" href="css/footer.css">
-		<link rel="stylesheet" href="css/style.css">
+		
 	</head>
 	<body>
 		<header class="page-header">
-			<nav class="main-menu">
-				<div class="container main-menu__container">
+			<nav class="container main-menu">
+				<div class="main-menu__container">
 					<div class="main-menu__head">
 						<a class="logo-link main-menu__logo-link" href="#">
 							<img class="logo-image main-menu__logo-image" src="img/logo.svg" alt="Posuda Planet" width="224" height="48">
@@ -60,32 +65,30 @@
 								<a class="main-menu__link" href="">Контакты</a>
 							</li>
 						</ul>
+						<div class="add-menu">
+							<form class="search" method="get">
+								<label class="visually-hidden" for="main-search">Быстрый поиск товаров:</label>
+								<input class="search__input" type="text" name="main-search" id="main-search" value="" placeholder="Например: ножи керамические">
+								<button class="visually-hidden" type="submit">Поиск</button>
+							</form>
+							<div class="h-contacts">
+								<p class="h-contacts__times">
+									<span class="h-contacts__desc">Время работы</span>
+									<b class="h-contacts__time">Ежедневно, 8:00 &mdash; 22:00</b>
+								</p>
+								<p class="h-contacts__phones">
+									<b class="h-contacts__phone">8 (495) 532-45-24</b>
+									<b class="h-contacts__phone">8 (495) 532-45-24</b>
+								</p>
+							</div>
+							<div class="h-contacts__wrapper">
+								<a class="h-contacts__link" href="#">Заказать звонок</a>
+							</div>
+						</div>
 					</div>
 				</div>
-			</nav>
-			<div class="container add-menu">
-				<div class="add-menu__wrapper">
-					<form class="search" method="get">
-						<label class="visually-hidden" for="main-search">Быстрый поиск товаров:</label>
-						<input class="search__input" type="text" name="main-search" id="main-search" value="" placeholder="Например: ножи керамические">
-						<button class="visually-hidden" type="submit">Поиск</button>
-					</form>
-					<div class="h-contacts">
-						<p class="h-contacts__times">
-							<span class="h-contacts__desc">Время работы</span>
-							<b class="h-contacts__time">Ежедневно, 8:00 &mdash; 22:00</b>
-						</p>
-						<p class="h-contacts__phones">
-							<b class="h-contacts__phone">8 (495) 532-45-24</b>
-							<b class="h-contacts__phone">8 (495) 532-45-24</b>
-						</p>
-					</div>
-					<div class="h-contacts__wrapper">
-						<a class="h-contacts__link" href="#">Заказать звонок</a>
-					</div>
-				</div>
-			</div>
-			<div class="cart-menu" style="display: none;">
+				
+			<div class="cart-menu">
 					<span class="cart-menu__title">В корзине</span>
 					<ul class="cart-menu__list">
 						<li class="cart-menu__item">
@@ -99,6 +102,7 @@
 					</ul>
 					<a class="button button--green button--t-up cart-menu__link" href="">Корзина</a>
 				</div>
+			</nav>
 		</header>
 		<main class="page-main">
 			<h1 class="visually-hidden">Магазин посуды Posuda Planet</h1>
@@ -1396,7 +1400,6 @@
 			</section>
 			<section class="container small-catalog">
 				<h2 class="visually-hidden">Популярные товары и новинки</h2>
-				<header class="small-catalog__header">
 				<ul class="toggle">
 					<li class="toggle__item new-items-link">
 						<a class="toggle__link" href="">Новинки</a>
@@ -1405,8 +1408,6 @@
 						<a class="toggle__link" href="">Лидеры продаж</a>
 					</li>
 				</ul>
-				<a class="button button--white small-catalog__button" href="">Показать все</a>
-				</header>
 				<ul class="small-catalog__list">
 					<li class="small-catalog__item small-cat-card">
 						<a class="small-cat-card__picture-link" href="">
@@ -1619,6 +1620,7 @@
 						</div>
 					</li>
 				</ul>
+				<a class="button button--white small-catalog__button" href="">Показать все</a>
 			</section>
 			<section class="container advantages">
 				<h2 class="advantages__title">Что такое PosudaPlanet?</h2>
@@ -2085,11 +2087,8 @@
 				</div>
 			</div>
 			<section class="last-articles">
-				<div class="container">
-					<div class="flex-art-wrapper">
-						<h2 class="last-articles__title">Последние статьи</h2>
-						<a class="button button--gray last-articles__to-all" href="">Показать все</a>
-					</div>
+				<div class="container last-articles__wrapper">
+					<h2 class="last-articles__title">Последние статьи</h2>
 					<ul class="last-article">
 						<li class="last-article__item last-article--med">
 							<a href="">
@@ -2120,6 +2119,7 @@
 							</a>
 						</li>
 					</ul>
+					<a class="button button--gray last-articles__to-all" href="">Показать все</a>
 				</div>
 			</section>
 		</main>

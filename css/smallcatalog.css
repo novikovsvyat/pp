@@ -1,0 +1,237 @@
+.small-catalog {
+    padding: 0 6.25%;
+    margin-bottom: 40px;
+}
+
+.small-catalog__button {
+    width: auto;
+    padding: 10px 32px;
+    font-weight: 700;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.small-catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.small-catalog__item {
+    border: 1px solid #ebebeb;
+    background-color: #fff;
+    width: 205px;
+    padding: 0 10px 19px;
+    flex-grow: 1;
+}
+
+.small-cat-card:hover {
+	transform: scale(1.03);
+    box-shadow: 0 0 6px rgba(0,0,0,.13);
+    transition:all .1s ease;
+}
+
+.small-cat-card__picture-link {
+    display: flex;
+    height: 185px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4px
+}
+
+.small-cat-card__article {
+    font-size: 10px;
+    display: block;
+    margin-bottom: 7px;
+    color: #999
+    text-transform: uppercase
+
+}
+
+.small-cat-card__title {
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 9px;
+    height: 40px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.small-cat-card__button {
+    width: auto;
+    font-weight: 700;
+    flex-grow: 1;
+}
+
+.small-cat-card__price-button-wrapper {
+    display: flex;
+    align-items: center
+}
+
+.small-cat-card__price {
+    margin-right: 17px
+}
+
+.small-cat-card__price-term {
+    font-size: 10px;
+    line-height: 13px;
+    font-weight: 700;
+    color: #999;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 2px
+}
+
+.small-cat-card__price-def {
+    font-size: 18px;
+    line-height: 24px
+}
+
+.toggle {
+	max-width: 450px;
+    border-radius: 30px;
+    min-height: 45px;
+    padding: 3px;
+    background-color: #fff;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    box-shadow: 0 2px 6px rgba(0,0,0,.13)
+}
+
+.toggle__link {
+    display: block;
+    color: #35cbba;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 11px 33px;
+}
+
+.toggle__item--active {
+    background-color: #35cbba;
+    border-radius: 30px
+}
+
+.toggle__item--active .toggle__link {
+    color: #fff
+}
+
+@media (min-width: 1065px) {
+	.small-catalog {
+		padding: 0;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.small-catalog__button {
+    width: auto;
+    padding: 10px 32px;
+    font-weight: 700;
+    order: 2;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.small-catalog__header {
+    min-height: 85px;
+    display: flex;
+    padding: 20px 0;
+    justify-content: space-between;
+    align-items: center
+}
+
+.small-catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    order: 3;
+    width: 100%;
+}
+
+.small-catalog__item {
+    border: 1px solid #ebebeb;
+    border-left: none;
+    background-color: #fff;
+    width: 205px;
+    padding: 0 10px 19px
+}
+
+.small-catalog__item:first-child,.small-catalog__item:nth-child(5n+1) {
+    border-left: 1px solid #ebebeb
+}
+
+.small-catalog__item:nth-child(1n+6) {
+    border-top: none
+}
+
+.small-cat-card:hover {
+	transform: scale(1.03);
+    box-shadow: 0 0 6px rgba(0,0,0,.13);
+    transition:all .1s ease;
+}
+
+.small-cat-card__picture-link {
+    display: flex;
+    height: 185px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4px
+}
+
+.small-cat-card__article {
+    font-size: 10px;
+    display: block;
+    margin-bottom: 7px;
+    color: #999
+    text-transform: uppercase
+
+}
+
+.small-cat-card__title {
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 9px;
+    height: 40px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.small-cat-card__button {
+    width: auto;
+    font-weight: 700;
+    flex-grow: 1
+}
+
+.small-cat-card__price-button-wrapper {
+    display: flex;
+    align-items: center
+}
+
+.small-cat-card__price {
+    margin-right: 17px
+}
+
+.small-cat-card__price-term {
+    font-size: 10px;
+    line-height: 13px;
+    font-weight: 700;
+    color: #999;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 2px
+}
+
+.small-cat-card__price-def {
+    font-size: 18px;
+    line-height: 24px
+}
+
+.toggle {
+	order: 1;
+	margin: 0;
+	margin-bottom: 20px;
+}
+}
