@@ -274,6 +274,12 @@
     margin-right: 11px
 }
 
+@media (min-width: 768px) {
+    .page-header {
+        margin-bottom: 20px;
+    }
+}
+
 @media (min-width: 1065px) {
     .mm-button,.um-button {
         display:none

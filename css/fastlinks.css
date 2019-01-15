@@ -1,0 +1,225 @@
+.fast-links {
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 0 3.125%;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.13);
+}
+
+.fast-links__button {
+    background-color: #ffffff;
+    border: 0;
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-weight: 700;
+    line-height: 14px;
+    padding: 13px 20px;
+    color: #333;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(216,216,216,0.5);
+    position: relative;
+}
+
+.fast-links__button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 20px;
+    width: 10px;
+    height: 10px;
+    margin: auto;
+    background-color: transparent;
+    border-right: 3px solid #28B7A6;
+    border-bottom: 3px solid #28B7A6;
+    transform: rotate(45deg);
+}
+
+.fast-links__list {
+    position: relative;
+}
+
+.fast-links__item {
+    flex-grow: 1;
+    text-align: left;
+    font-weight: 700;
+    line-height: 14px;
+}
+
+.fast-links__link {
+    display: block;
+    padding: 13px 20px;
+    position: relative;
+    border-bottom: 1px solid rgba(216,216,216,0.5);
+}
+
+@media (max-width: 1064px) {
+    .fast-links__wrapper--hide {
+    display: none;
+    }
+
+    .fast-links__wrapper--show {
+        display: block;
+    }
+
+    .submenu__wrapper--hide {
+        display: none;
+    }
+
+    .submenu__wrapper--show {
+        display: block;
+    }
+}
+
+.submenu__wrapper {
+    background-color: #f9f9f9;
+    padding: 10px 20px;
+    text-align: left;
+    text-transform: none;
+    border-bottom: 1px solid rgba(216,216,216,0.5);
+}
+
+.submenu__title {
+    display: none;
+}
+
+.submenu__list {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.submenu__link {
+    line-height: 40px;
+}
+
+
+@media (min-width: 768px) {
+    .fast-links {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (min-width: 1065px) {
+    .fast-links__button {
+        display: none;
+    }
+    .fast-links {
+    box-shadow: 0 2px 6px rgba(0,0,0,.13)
+}
+
+.fast-links {
+    background-color: #fff;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.fast-links__list {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 6px
+}
+
+.fast-links__list:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    width: 96%;
+    height: 1px;
+    background-color: #ebebeb;
+    bottom: -1px;
+    left: 20px
+}
+
+.fast-links__item {
+    flex-grow: 1;
+    text-align: center;
+    font-weight: 700;
+    line-height: 14px
+}
+
+.fast-links__item:first-child {
+    padding-left: 0
+}
+
+.fast-links__item:last-child {
+    padding-right: 0
+}
+
+.fast-links__link {
+    display: block;
+    padding: 12px 0 18px;
+    position: relative;
+    border: none;
+}
+
+.fast-links__item:not(:last-child) .fast-links__link::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 40%;
+    background-color: #ebebeb;
+    top: -6px;
+    margin: auto;
+    bottom: 0;
+    right: 0
+}
+
+.fast-links__item:hover .fast-links__link,
+.fast-links__link:hover {
+    background-color: #35cbba;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 16px 0 14px
+}
+
+.fast-links__item:hover .fast-links__link::after,
+.fast-links__link:hover::after {
+    display: none
+}
+
+.submenu__wrapper {
+    position: absolute;
+    display: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,.13);
+    width: 100%;
+    background-color: #fff;
+    z-index: 19;
+    border-top: 4px solid #35CBBA;
+    padding: 20px 30px;
+    text-align: left;
+    text-transform: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    left: 0;
+    top: 49px
+}
+
+.fast-links__item:hover .submenu__wrapper {
+    display: block
+}
+
+.submenu__title {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 22px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(216,216,216,.5)
+}
+
+.submenu__list {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 500;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.submenu__item {
+    width: 33.3%
+}
+}
