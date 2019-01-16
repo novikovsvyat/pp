@@ -1,10 +1,6 @@
-.pop-categories {
-    display: none;
-}
-
-@media (min-width: 1065px) {
 .pop-categories__title {
-    margin-bottom: 30px
+    margin-bottom: 30px;
+    
 }
 
 .pop-categories__title {
@@ -17,12 +13,99 @@
     display: block;
     border-top: 1px solid #ebebeb;
     background-color: #fff;
+    padding: 0 6.25%;
     padding-top: 45px;
     padding-bottom: 53px
 }
 
+
+.pop-categories__filters {
+    min-height: 500px;
+    width: 285px;
+    flex-shrink: 0
+}
+
+.pop-categories__f-list {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
+}
+
+.pop-categories__f-item {
+    margin-bottom: 20px
+}
+
+.pop-categories__f-link {
+    color: #909090;
+    position: relative;
+    transition: all .1s ease;
+}
+
+.pop-categories__f-link--active::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    top: 7px;
+    right: -14px;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 8px solid #35CBBA;
+    transition: all .1s ease;
+}
+
+.pop-categories__f-link--active {
+    color: #35CBBA;
+    transition: all .1s ease;
+}
+
+.pop-categories__r-list {
+    display: none;
+    animation: fadeEffect 0.3s;
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.pop-categories__r-list--active {
+    display: block;
+}
+
+.pop-categories__r-item {
+    padding-left: 30px;
+    padding-right: 24px
+}
+
+.pop-categories__r-link {
+    line-height: 25px;
+    color: #28B7A6
+}
+
+
+@media (min-width: 1065px) {
+.pop-categories__title {
+    margin-bottom: 30px
+}
+
+.pop-categories__title {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700
+}
+
 .pop-categories__wrapper {
-    display: flex
+    display: flex;
+}
+
+.pop-categories {
+    display: block;
+    border-top: 1px solid #ebebeb;
+    background-color: #fff;
+    padding-top: 45px;
+    padding-bottom: 53px
 }
 
 .pop-categories__filters {
@@ -78,6 +161,10 @@
 @keyframes fadeEffect {
   from {opacity: 0;}
   to {opacity: 1;}
+}
+
+.pop-categories__r-list--active {
+    display: flex;
 }
 
 .pop-categories__r-item {

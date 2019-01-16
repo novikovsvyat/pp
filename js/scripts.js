@@ -91,7 +91,7 @@ function openCat(evt, catName) {
   // Get all elements with class="tabcontent" and hide them
   tabcontent = document.getElementsByClassName("pop-categories__r-list");
   for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
+    tabcontent[i].classList.remove("pop-categories__r-list--active");
   }
 
   // Get all elements with class="tablinks" and remove the class "active"
@@ -101,7 +101,7 @@ function openCat(evt, catName) {
   }
 
   // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(catName).style.display = "flex";
+  document.getElementById(catName).classList.add("pop-categories__r-list--active");
   evt.currentTarget.className += " pop-categories__f-link--active";
 }
 
@@ -110,7 +110,7 @@ function openCat(evt, catName) {
 function fastLinks(evt, linkName) {
   evt.preventDefault();
   // Declare all variables
-  var i, tabcontent, tablinks;
+  var i, tabcontent, tablinks, elmnt;
 
   if (evt.currentTarget.classList.contains("fast-links__link--active")) {
     document.getElementById(linkName).classList.remove("submenu__wrapper--show");
@@ -135,6 +135,7 @@ function fastLinks(evt, linkName) {
     document.getElementById(linkName).classList.remove("submenu__wrapper--hide");
     document.getElementById(linkName).classList.add("submenu__wrapper--show");
     evt.currentTarget.className += " fast-links__link--active";
+    document.getElementById(linkName).scrollIntoView(true);
     }
 }
 
