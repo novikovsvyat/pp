@@ -103,6 +103,7 @@ function openCat(evt, catName) {
   // Show the current tab, and add an "active" class to the button that opened the tab
   document.getElementById(catName).classList.add("pop-categories__r-list--active");
   evt.currentTarget.className += " pop-categories__f-link--active";
+  document.getElementById(catName).scrollIntoView(true);
 }
 
 /* fast-links */
@@ -135,7 +136,6 @@ function fastLinks(evt, linkName) {
     document.getElementById(linkName).classList.remove("submenu__wrapper--hide");
     document.getElementById(linkName).classList.add("submenu__wrapper--show");
     evt.currentTarget.className += " fast-links__link--active";
-    document.getElementById(linkName).scrollIntoView(true);
     }
 }
 

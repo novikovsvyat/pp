@@ -47,7 +47,6 @@
     background-color: #8a7970;
     width: 248px;
     min-height: 280px;
-    padding-top: 118px;
     border-radius: 5px;
     box-shadow: 0 2px 6px rgba(0,0,0,.13);
     flex-shrink: 0;
@@ -105,6 +104,12 @@
     font-weight: 500;
     opacity: .5;
     color: #D8D8D8
+}
+
+.last-article__link {
+    display: block;
+    padding-top: 118px;
+
 }
 
 @media (min-width: 768px) {

@@ -172,7 +172,12 @@ body {
     min-width: 320px;
     font-family: Montserrat,OpenSans,Arial,sans-serif;
     font-size: 12px;
-    font-weight: 500
+    font-weight: 500;
+    opacity: 0;
+}
+
+:focus {
+    outline: none;
 }
 
 .logo-link {
